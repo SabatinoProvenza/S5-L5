@@ -1,0 +1,482 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #191919;
+  background-color: #fff;
+  line-height: 1.5;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffc017;
+  border-bottom: 1px solid #191919;
+  padding: 1rem 2rem;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+header .navbar a {
+  color: #191919;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+header .navbar button {
+  background-color: #191919;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5em 1em;
+  font-size: 0.9rem;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  background-color: #ffc017;
+  border-bottom: 1px solid #191919;
+  padding: 4rem 2rem;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text button {
+  background-color: #191919;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.7em 1.5em;
+  font-size: 1rem;
+}
+
+/* ---------- TRENDING ---------- */
+.trending {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.trending-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.trending-header p {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.trending-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.trending-article {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.trending-article .number {
+  font-size: 1.8rem;
+  color: #ccc;
+  font-weight: bold;
+}
+
+.trending-article .author {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.trending-article .author img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.trending-article .title {
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 0.3rem;
+}
+
+.trending-article .meta {
+  font-size: 0.9rem;
+  color: #777;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ---------- DISCOVER ---------- */
+#discover {
+  border-top: 1px solid #d1d1d1;
+  border-bottom: 1px solid #d1d1d1;
+  padding: 2rem 0;
+  max-width: 1100px;
+  margin: 3rem auto;
+}
+
+#discover p {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#discover .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+#discover .tags button {
+  border: 1px solid #d1d1d1;
+  background: white;
+  color: #777;
+  border-radius: 20px;
+  padding: 0.4em 0.8em;
+  cursor: pointer;
+}
+#navbar3 {
+  text-decoration: none;
+}
+
+/* ---------- ASIDE  ---------- */
+aside {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto 2rem;
+  padding-bottom: 2rem;
+}
+
+.aside-text {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.aside-text .author {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.aside-text .author img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.aside-text h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  color: #191919;
+}
+
+.aside-text .excerpt {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.aside-text .meta {
+  font-size: 0.85rem;
+  color: #777;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.aside-text .meta button {
+  border: none;
+  background-color: #f2f2f2;
+  color: #555;
+  border-radius: 20px;
+  padding: 0.2em 0.8em;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.aside-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.aside-image img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.aside-image {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.aside-image .bookmark {
+  position: static;
+  background: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aside-image .bookmark img {
+  width: 18px;
+  height: 18px;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.aside-image .bookmark img:hover {
+  opacity: 1;
+}
+
+/* --- DESKTOP  --- */
+@media (min-width: 1024px) {
+  .aside-image {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .aside-image .bookmark {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 6px;
+    border-radius: 50%;
+  }
+
+  .aside-image .bookmark img {
+    width: 16px;
+    height: 16px;
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 699px) {
+  .navbar a:nth-of-type(-n + 3) {
+    display: none;
+  }
+}
+
+/* --- TABLET --- */
+@media (min-width: 700px) {
+  .trending-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .trending-article {
+    flex: 0 0 48%;
+  }
+
+  aside {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .aside-image img {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 1023px) {
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+  #navbar3 a {
+    text-decoration: none;
+    color: #777;
+  }
+}
+
+/* ==========  DESKTOP  ========== */
+@media (min-width: 1024px) {
+  .trending {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
+
+  .trending-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .trending-article {
+    flex: 0 0 30%;
+  }
+
+  /* --- MAIN DUE COLONNE --- */
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
+
+  /* Colonna sinistra (ASIDE) */
+  .left-column {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .left-column aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 2rem;
+  }
+
+  .aside-text {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .aside-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+  }
+
+  .aside-image img {
+    width: 100%;
+    max-width: 240px;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+
+  /* --- BOOKMARK --- */
+  .aside-image .bookmark {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 6px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aside-image .bookmark img {
+    width: 16px;
+    height: 16px;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  .aside-image .bookmark img:hover {
+    opacity: 1;
+  }
+
+  /* --- Colonna destra (DISCOVER + NAVBAR) --- */
+  .right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: sticky;
+    top: 2rem;
+    align-self: flex-start;
+  }
+
+  #discover {
+    border-top: none;
+    border-bottom: 1px solid #e6e6e6;
+    padding-top: 0;
+    padding-bottom: 2rem;
+  }
+
+  #discover p {
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  #discover .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+  }
+
+  #discover button {
+    border: 1px solid #d1d1d1;
+    background-color: white;
+    color: #777;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+
+  #navbar3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #777;
+  }
+
+  #navbar3 a {
+    color: #777;
+    text-decoration: none;
+  }
+}
